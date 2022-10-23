@@ -15,9 +15,9 @@ Please delete options that are not relevant.
 
 ## Change Details
 
-- **What kind of change does this PR introduce?** (Bug fix, feature, docs update, ...)
+- ### **What kind of change does this PR introduce?** (Bug fix, feature, docs update, ...)
 
-- **What is the current behavior?** (You can also link to an open issue here)
+- ### **What is the current behavior?** (You can also link to an open issue here)
 
 ## Screenshots (if applicable)
 
