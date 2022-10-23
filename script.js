@@ -12,3 +12,24 @@ const aliceTiming = {
 const alice1 = document.querySelector("#alice1");
 const alice2 = document.querySelector("#alice2");
 const alice3 = document.querySelector("#alice3");
+
+//promise chaining
+/*const animated = alice1.animate(aliceTumbling, aliceTiming);
+animated.finished
+  .then(() => alice2.animate(aliceTumbling, aliceTiming).finished)
+  .then(() => alice3.animate(aliceTumbling, aliceTiming).finished)
+  .catch((error) => console.log(error));
+*/
+
+//using async-await methiod
+const animated2 = async () => {
+  try {
+    await alice1
+      .animate(aliceTumbling, aliceTiming)
+      .finished.then(() => alice2.animate(aliceTumbling, aliceTiming).finished)
+      .then(() => alice3.animate(aliceTumbling, aliceTiming).finished);
+  } catch {
+    throw new Error(error);
+  }
+};
+animated2();
